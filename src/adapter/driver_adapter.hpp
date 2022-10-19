@@ -103,7 +103,7 @@ inline void DriverAdapter::init(const YAML::Node& config)
   yamlRead<uint16_t>(driver_config, "split_frame_mode", split_frame_mode, 1);
   yamlRead<uint32_t>(driver_config, "num_pkts_split", driver_param.decoder_param.num_pkts_split, 0);
   yamlRead<float>(driver_config, "cut_angle", driver_param.decoder_param.cut_angle, 0);
-  yamlRead<std::string>(driver_config, "device_ip", driver_param.input_param.device_ip, "192.168.1.200");
+  yamlRead<std::string>(driver_config, "device_ip", driver_param.input_param.device_ip, "127.0.0.1");
   yamlRead<std::string>(driver_config, "multi_cast_address", driver_param.input_param.multi_cast_address, "0.0.0.0");
   yamlRead<uint16_t>(driver_config, "msop_port", driver_param.input_param.msop_port, 6699);
   yamlRead<uint16_t>(driver_config, "difop_port", driver_param.input_param.difop_port, 7788);
